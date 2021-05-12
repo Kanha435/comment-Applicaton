@@ -1,0 +1,14 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.comment-box{
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+.comment{
+    padding: 2px;
+    padding-left: 10px;
+}

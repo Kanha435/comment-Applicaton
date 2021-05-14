@@ -12,10 +12,11 @@
    <div class="container">
        <div class="row">
            <div class="col-md-12">
-               <h4> <strong> Live comment application system</strong></h4>
+                <p class="text-center">WELCOME</p>
+               <h4 class="text-center m-5"> <strong> Comment application</strong></h4>
            </div>
            <div class="col-md-12">
-               <p class="text-primary">
+               <p class="text-primary text-justify">
                 He made his comments at a news conference in Amsterdam.
                 I was wondering whether you had any comments about that?
                 There's been no comment so far from police about the allegations.
@@ -28,31 +29,32 @@
                <h6>Write a comment...</h6>
            </div>
            <div class="col-md-12">
-               <textarea id="text" cols="30" rows="2" class="form-control"></textarea>
+               <textarea id="inputComment" cols="30" rows="2" class="form-control"></textarea>
            </div>
            <div class="col-md-12 float-right">
-               <button type="submit" class="btn btn-primary mt-2 ">Post comment</button>
+               <button type="submit" class="btn btn-primary mt-2 " id="postBtn">Post comment</button>
            </div>
+       </div>
+
+       <div class="row mt-3 text-primary" id="typing">
+
        </div>
        <div class="row mt-2">
            <div class="col-md-12">
-               <ul class="comment-box">
-                   <li class="comment card">
-                       <h6>Kanhaiya lal</h6>
-                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquid obcaecati odio dolore doloremque sunt ipsa necessitatibus numquam, nihil atque.</p>
-                       <img src="https://cdn1.iconfinder.com/data/icons/material-design-icons-light/24/clock-128.png" alt="" style="width: 15px;"><small> 05:30</small>
-                   </li>
-                   <li class="comment card">
-                    <h6>Kanhaiya lal</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquid obcaecati odio dolore doloremque sunt ipsa necessitatibus numquam, nihil atque.</p>
-                    <img src="https://cdn1.iconfinder.com/data/icons/material-design-icons-light/24/clock-128.png" alt="" style="width: 15px;"><small> 05:30</small>
-                </li>
+               <ul class="comment-box" id="commentBox">
+                   <!-- <li class="comment card m-2">
+                       <div class="card-body">
+                            <h6>Kanhaiya lal</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquid obcaecati odio dolore doloremque sunt ipsa necessitatibus numquam, nihil atque.</p>
+                            <img src="https://cdn1.iconfinder.com/data/icons/material-design-icons-light/24/clock-128.png" alt="" style="width: 15px;"><small> 05:30</small>
+                       </div>  
+                   </li> -->
                </ul>
            </div>
        </div>
    </div>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>
